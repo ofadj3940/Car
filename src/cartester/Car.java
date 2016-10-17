@@ -14,11 +14,16 @@ public class Car {
     private String make, model;
     private int year, price, topSpeed, kilometres;
 
-
+/**
+ * constructor
+ * pre: none
+ * post: Default car created. Each variable
+ * assigned a constant value.
+ */
 public Car(){
 
-make  = "honda";
-model = "civic";
+make  = "Honda";
+model = "Civic";
 year = 2016;
 price = 10000;
 topSpeed = 200;
@@ -26,6 +31,14 @@ kilometres = 78;
 
 
 }
+
+/**
+ * constructor
+ * pre: none
+ * post: Default car created. Each variable except for 
+ * model and make of car have been
+ * assigned a constant value.
+ */
 public Car(String mk, String md){
 
     make = mk;
@@ -35,6 +48,14 @@ public Car(String mk, String md){
     topSpeed = 350;
     kilometres = 3000;
 }
+
+/**
+ * constructor
+ * pre: none
+ * post: All parameters passed into 
+ * define the specs of car. 
+ * User customization of car 
+ */
 public Car(String mk, String md, int yr, int pr, int ts, int km ){
 
     make = mk;
@@ -55,7 +76,7 @@ public String toString(){
     output+="The year of your car is "+year+"\n";
     output+="The prices of your car is a whopping "+price+"\n";
     output+="The top speed is "+topSpeed+"\n";
-    output+="The mileage of your car is"+kilometres+"\n";
+    output+="The mileage of your car is "+kilometres+"\n";
     
     return output;
 }
